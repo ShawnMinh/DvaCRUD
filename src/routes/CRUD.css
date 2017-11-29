@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    padding: 0;
+        font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+h1{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 40px;
+}
+li{
+    list-style: none;
+}
+p{
+    width: 100%;
+    margin:10px auto;
+    text-align: center;
+}
+/*数据区域  */
+.tit{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e9e9e9;
+}
+.databox{
+    width: 100%;
+    height:  auto;
+    overflow: hidden;
+    position: relative;
+}
+.databoxmain{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+}
+.onedata{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    border-bottom: 1px solid #e9e9e9;
+    cursor: pointer;
+}
+.onedata:hover{
+    background-color: #6aefb5;
+}
+.databoxmain div:nth-child(2n){
+    background-color:#ecf6fd ;
+}
+.onedata input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+        color: rgba(0, 0, 0, 0.65);
+    font-size: 12px;
+}
+
+.onedatamainLeft{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    float: left; 
+}
+
+ span{
+    float: left;
+    display: block;
+    width: 14.2%;
+    height: 100%;
+    line-height: 50px;
+    text-align: left;
+}
+
+.delete{
+    cursor: pointer;
+    color:#e00b92;
+    font-weight: bold;
+        -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+    width: 50%;
+}
+.delete:hover{
+   background-color: tomato
+}
+/* 数据结束 */
+
+
+
+/*CRUD  */
+.docrude{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+.docrude p{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+.docrude p input{
+    width: 13.8%;
+    height: 80%;
+    float: left;
+        color: rgba(0, 0, 0, 0.65);
+
+}
+.docrude p span{
+    float: right;
+    border: 1px solid #6aefb5;
+    width: 20%;
+    height: 80%;
+    text-align: center;
+    line-height: 40px;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.docrude p span:hover{
+    background-color: #e00b92;
+    color: #fff;
+}
+
+/*CRUD over  */
+
+
+/*数据查询  */
+.choice{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+.choice p{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+.choice p .cho{
+    width:30%;
+    float: left;
+}
+.choice p .cond{
+height: 100%;
+width: 20%;
+float:left;
+position: relative;
+} 
+.choice p input,select{
+    height: 80%;
+    width: 50%;
+    float: left;
+    color:  rgba(0, 0, 0, 0.65)
+}
+.choice p span{
+    float: right;
+    border: 1px solid #6aefb5;
+    width: 20%;
+    height: 80%;
+    text-align: center;
+    line-height: 40px;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.choice p span:hover{
+    background-color: #e00b92;
+    color: #fff;
+}
+
+/*  over */
+
+/*sort  */
+.tit span{
+    cursor: pointer;
+}
+.tit span:hover{
+    font-size: 13px;
+}
+.sort:hover::after{
+    content: "Sort";
+    color: #e00b92;
+}
+
+/*  */
+
+.change{
+    color: red;
+}
