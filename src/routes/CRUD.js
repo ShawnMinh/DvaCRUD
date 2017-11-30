@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
 import styles from './CRUD.css';
-
+import {Link} from 'dva/router'
 
 var Laozhang = React.createClass({
 
@@ -32,6 +32,7 @@ var Laozhang = React.createClass({
                 <Addata add={this.handleChange} flowers={this.state.flowers}></Addata>
                 <p> Writed By Shawn </p>
                 <p>Synnex 2017.11.29</p>
+                <p> <Link to="/test">Redux Test Edition</Link> </p>
             </div>
         );
     }

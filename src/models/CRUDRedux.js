@@ -5,13 +5,16 @@ export default {
     namespace: 'crud',
 
     state: {
-        flowers:[]
+        flowers: []
     },
 
     subscriptions: {
         setup({ dispatch, history }) {
-            history.listen((Location)=>{
+            history.listen((Location) => {
                 console.log(Location.pathname)
+                if (Location.pathname == '/test') {
+                    dispatch({type: 'crud/init'})
+                }
             })
         },
     },
@@ -22,6 +25,9 @@ export default {
             // yield put({ type: 'test', payload: value  });
             console.log(value)
         },
+        *init({ payload: value }) {
+            console.log("更新了");
+        }
     },
 
     reducers: {

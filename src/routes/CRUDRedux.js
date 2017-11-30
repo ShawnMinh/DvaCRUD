@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
 import styles from './CRUD.css';
+import { Link } from 'dva/router'
 import Searchata from '../components/Searchdata'
 import Addata from '../components/Addata'
 import Showdata from '../components/Showdata'
@@ -41,6 +42,7 @@ var Laozhang = React.createClass({
                 <p>本页面已组建化并采用Redux进行状态管理</p>
                 <p>Writed By Shawn</p>
                 <p>Synnex 2017.11.29</p>
+                <p> <Link to="/">Test Edition</Link> </p>
             </div>
         );
     }
