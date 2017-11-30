@@ -25,6 +25,11 @@ var Laozhang = React.createClass({
             flowers: rowdata
         })
     },
+    handleGO: function () {
+       // console.log(this.props.crud);
+      // console.log(flowersList)
+        this.props.dispatch({ type: 'crud/test', payload: "123" });
+    },
     render: function () {
         return (
             <div>
@@ -32,6 +37,7 @@ var Laozhang = React.createClass({
                 <Searchata sea={this.handleChange} flowers={this.state.flowers}></Searchata>
                 <Showdata del={this.handleChange} flowers={this.state.flowers}></Showdata>
                 <Addata add={this.handleChange} flowers={this.state.flowers}></Addata>
+                <button onClick={this.handleGO}>Test</button>
                 <p>本页面已组建化并采用Redux进行状态管理</p>
                 <p>Writed By Shawn</p>
                 <p>Synnex 2017.11.29</p>
@@ -44,7 +50,13 @@ var Laozhang = React.createClass({
 Laozhang.propTypes = {
 };
 
-export default connect()(Laozhang);
+// 方法引入Redux  输入的是 namespace
+function mapStateToProps({crud}) {
+    return {crud}
+}
+
+// export default connect(({ crud }) => ({ crud }))(Laozhang);
+export default connect(mapStateToProps)(Laozhang);
 
 
 

@@ -109,7 +109,7 @@ var Showdata = React.createClass({
                     {
                         this.props.flowers.map(function (item, i) {
                             {/*必须出现key  */ }
-                            console.log(this.props.flowers,item)
+                        //    console.log(this.props.flowers,item)
                             return (
                                 <div key={i} >
                                     {
